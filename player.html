@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">
+	<link rel="stylesheet" href="css/player.css">
+	<link rel="stylesheet" href="css/playlist.css">
+		
+	<script type="text/javascript" src="js/jquery-latest.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.js"></script>
+
+<script>
+</script>
+</head>
+<body style="background-color: rgb(229,229,229);">
+
+
+
+<!--  Sliding Playlist -->
+
+<div id="musicplaylist">
+			<h2>PLAYLIST</h2>
+			<div id="innerplaylist">
+					<ul class="playlist">
+									<li id="music1" audiourl="resources/musics/track1.mp3" cover="resources/albumart/default.png" artist="Artist 1" songname="Track1">1.<img src="resources/albumart/default.png" width="26" height="34"></img>Track1</li>
+									<li id="music2" audiourl="resources/musics/track2.mp3" cover="resources/albumart/default.png" artist="Artist 2" songname="Track2">2.<img src="resources/albumart/default.png" width="26" height="34"></img>Track2</li>
+									<li id="music3" audiourl="resources/musics/track3.mp3" cover="resources/albumart/default.png" artist="Artist 3" songname="Track3">3.<img src="resources/albumart/default.png" width="26" height="34"></img>Track3</li>
+				
+			</div>
+		</div>
+
+<!--  Sliding Playlist ends-->
+
+<!--  Music Player-->
+
+<div id="border">
+				<div id="artistpic">
+					<img src="resources/albumart/wakemeup.jpg" id="playercover"></img>
+				</div>
+				<div id="musiccontrol">
+					<img onclick="prevsong()" src="resources/buttons/grewind.png" height="18" width="18"></img>
+					<img id="playpause" onclick="playorpause()" src="resources/buttons/gplay.png" height="18" width="18"></img>
+					<img onclick="nextsong()" src="resources/buttons/gforward.png" height="18" width="18"></img>	
+				</div>
+				<div id="musicinfo">
+					<span id="artistname">Relient K</span>
+					<span id="musicname">Must Have Done Something Right</span>
+				</div>
+				<div id="controlright">
+					<img onclick="" src="resources/buttons/grepeat.png" height="18" width="18"></img>
+					<img id="shufflepic" onclick="shuffle()" src="resources/buttons/gshuffle.png" height="18" width="18"></img>
+					<img id="playlistpic" onclick="playlist()" src="resources/buttons/gplaylistselc.png" height="18" width="18"></img>
+				</div>
+					
+					<div id="currenttime"><span>0:00</span></div>
+					
+					<div id="totaltime"><span>3:50</span></div>
+
+					<div id="slider"></div>
+				<div id="outervolslider">
+					<img src="resources/buttons/volfull.png" height="30" width="30" style="float:left;" id="volume"></img>
+					<div id="volslider"></div>
+				</div>
+			
+	</div>
+
+<!--  Music player ends-->
+</body>
+
+	<script type="text/javascript" src="js/music.js"></script>
+	
+</html>

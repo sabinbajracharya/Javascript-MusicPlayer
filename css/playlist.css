@@ -1,0 +1,71 @@
+
+@media (max-height: 654px) {
+  #musicplaylist {
+	top:58px;
+    height:450px;
+  } 
+  
+  #innerplaylist{
+		height:360px;
+	}
+}
+
+@media (min-height:655px){
+	#musicplaylist{
+		top:58px;
+		height:507px; 
+
+	}
+	#innerplaylist{
+		height:430px;
+	}
+	
+}
+
+.playlist{
+	cursor:pointer;
+}
+
+#musicplaylist{
+		position:fixed; 
+		right:0px; 
+		width:300px; 
+		background-color:white; 
+		border-radius:20px;
+}
+#musicplaylist h2{
+	font-family: 'Oswald-Bold', sans-serif;
+	margin-left:10px;
+	padding-top:10px;
+	margin-bottom:10px;
+}
+#musicplaylist  img{
+	margin-right:10px;
+
+	margin-left:5px;
+}
+#musicplaylist ul{
+	list-style-type: none; /*  Remove bullet from ul  */
+	font-family: 'Oswald-Light', sans-serif;
+	margin-top:10px;
+}
+#musicplaylist .current{
+	color:red;  /*  To change the text-color to red of the song being played  */
+	background-color:#333333; /*  To change the background color  */
+	font-weight:bold;
+}
+
+#musicplaylist li{
+	margin-left:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+
+#innerplaylist{
+	width:290px;
+	margin-left:5px;
+	background-color:rgb(221,219,215);
+	overflow-y:auto;
+	border-radius:10px;
+}
